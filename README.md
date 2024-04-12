@@ -1,1 +1,1 @@
-# NWTII_SoSe24
+# Meshlab lecture / seminar
