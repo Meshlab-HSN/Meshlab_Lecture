@@ -14,9 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: json-yaml-validate
-        id: json-yaml-validate
-        uses: GrantBirki/json-yaml-validate@v2.6.2
+      - name: yaml-schema-validator
+        uses: nrkno/yaml-schema-validator-github-action@v5
         with:
-          use_dot_match: false
-          files: "ssh_keys.yaml"
+          schema: _schema.yaml
+          target: ssh_keys.yaml
